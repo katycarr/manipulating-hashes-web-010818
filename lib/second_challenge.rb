@@ -7,7 +7,13 @@ def second_challenge
   }
 
   #code your solution here!
-  groceries.keys
+  flat_list = []
+  categories = groceries.values
+  categories.each do |item|
+    flat_list << item
+  end
+
+  flat_list
 
 
 end
