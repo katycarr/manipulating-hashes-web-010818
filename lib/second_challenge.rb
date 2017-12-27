@@ -9,8 +9,10 @@ def second_challenge
   #code your solution here!
   flat_list = []
   categories = groceries.values
-  categories.each do |item|
-    flat_list << item
+  categories.each do |sublist|
+    sublist.each do |item|
+      flat_list << item
+    end
   end
 
   flat_list
